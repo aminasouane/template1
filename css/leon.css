@@ -77,7 +77,7 @@ html {
     /*end of global rules*********************************************************************************/
     /*start of header*************************************************************************************/
     .header {
-       height:60px;
+        height:60px;
         padding: 20px;
     }
     .header .container {
@@ -198,20 +198,14 @@ html {
        .services-content {
         margin-top: 100px;
        }
-       .services .col div i {
-         display: inline-block;
+       .services .container .serve {
+           display: flex;
+           align-items: flex-start;
        }
-       .services .col div h3 {
-        display: inline-block;
-      } 
-      @media (max-width: 767px) {
-        .services .col div i {
-            display: block;
-          }
-          .services .col div h3 {
-           display: block;
-         } 
-         .services .col div{
+     @media (max-width: 767px) {
+         .services .container .serve {
+             flex-direction: column;
+             align-items: center;
              text-align: center;
          }
       }
@@ -371,7 +365,6 @@ html {
        .contact .social {
            font-size: 2vw;
            display: flex;
-           flex-direction: row;
            flex-wrap: nowrap;
            justify-content: center;
            align-items: center;
